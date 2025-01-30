@@ -15,9 +15,9 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        'beiruti':['Beiruti', 'serif'],
+        // 'beiruti':['Beiruti', 'serif'],
         'bakbakOne':['Bakbak One', 'serif'],
-
+        'open-sans':['Open Sans', 'serif']
       }
     },
   },
