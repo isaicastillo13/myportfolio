@@ -11,7 +11,8 @@ module.exports = {
       'pearl':'#FCFBF8',
       'butterYellow':'#FFF083',
       'grisAzulado':'#64748B',
-      'azulBrillante':'#1DA1F2'
+      'azulBrillante':'#1DA1F2',
+      'neutral900':'#6b7280'
     },
     extend: {
       fontFamily:{

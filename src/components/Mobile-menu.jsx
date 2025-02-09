@@ -1,16 +1,27 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 
 const hover =
   "hover:text-butterYellow hover:font-semibold transition-all transition-discrete duration-700 ease-in-out";
 
-function MobileMenu() {
+function MobileMenu({ isMobileMenuVisible, setMobileMenuVisible }) {
   const sections = useMemo(() => ["Home", "About", "Projects"], []);
 
   return (
-    <div className="md:hidden flex justify-end">
-      <ul className="flex flex-col items-end w-2/4 h-screen space-y-4 px-8">
+    <motion.div
+      initial={{ x: "-100%", opacity: 0 }}
+      animate={{ x: isMobileMenuVisible ? "0%" : "-100%", opacity: isMobileMenuVisible ? 1 : 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="md:hidden flex flex-col justify-end items-center gap-8 fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto scrollbar-none bg-negro"
+      tabIndex="-1"
+      aria-labelledby="drawer-navigation-label"
+    >
+     <h5 className="text-xl font-bold uppercase text-neutral900">Menu</h5>
+
+      {/* colocar iconos a los tap del menu */}
+      <ul className="flex flex-col items-start w-full h-screen space-y-4 px-8">
         {sections.map((section, index) => (
           <li key={index}>
             <Link
@@ -30,12 +41,13 @@ function MobileMenu() {
           />
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 }
 
 MobileMenu.propTypes = {
-  sections: PropTypes.arrayOf(PropTypes.string),
+  isMobileMenuVisible: PropTypes.bool.isRequired,
+  setMobileMenuVisible: PropTypes.func.isRequired,
 };
 
 export default MobileMenu;

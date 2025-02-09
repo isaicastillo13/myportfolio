@@ -101,7 +101,7 @@ function Navbar() {
         </button>
       </div>
 
-      {isMobileMenuVisible && <MobileMenu />}
+      {isMobileMenuVisible && <MobileMenu isMobileMenuVisible={isMobileMenuVisible} setMobileMenuVisible={setMobileMenuVisible} />}
     </nav>
   );
 }
