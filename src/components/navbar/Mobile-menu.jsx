@@ -18,13 +18,13 @@ function MobileMenu({ isMobileMenuVisible, setMobileMenuVisible }) {
       tabIndex="-1"
       aria-labelledby="drawer-navigation-label"
     >
-     <h5 className="text-xl font-bold uppercase text-neutral900">Menu</h5>
+     <h5 className="text-xl font-bold uppercase text-neutral900 pt-5">Menu</h5>
 
-  
+      {/* colocar iconos a los tap del menu */}
       <ul className="flex flex-col items-start w-full h-screen space-y-4 px-8">
         {sections.map((section, index) => (
-          <li key={index} className="flex gap-2">
-            <img className="w-5 h-5" src={`./assets/svg/${section}.svg`} alt="" />
+          <li className="flex gap-2" key={index}>
+            <img className="w-5" src={`./assets/svg/${section}.svg`} alt="" />
             <Link
               className={`text-open-sans text-pearl uppercase ${hover}`}
               to={`#/${section.toLowerCase()}`}

@@ -565,8 +565,24 @@ video {
   top: 0px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -745,6 +761,10 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .font-bakbakOne {

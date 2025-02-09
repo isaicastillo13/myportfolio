@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const OverlayProfile = () => {
   return (
-    <div className="flex flex-col gap-2 absolute left-28">
+    <div className="flex flex-col gap-2 absolute left-8">
       <h2 className="font-bakbakOne text-pearl uppercase text-2xl">
         Isaias E. <br />
         Castillo
