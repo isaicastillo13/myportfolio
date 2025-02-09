@@ -597,6 +597,10 @@ video {
   height: 100vh;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -620,6 +624,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .flex-row {
@@ -773,14 +781,14 @@ video {
   text-transform: uppercase;
 }
 
-.text-pearl {
-  --tw-text-opacity: 1;
-  color: rgb(252 251 248 / var(--tw-text-opacity, 1));
-}
-
 .text-neutral900 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-pearl {
+  --tw-text-opacity: 1;
+  color: rgb(252 251 248 / var(--tw-text-opacity, 1));
 }
 
 .transition {
