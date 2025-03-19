@@ -33,7 +33,7 @@ const NavLinks = React.memo(() => (
     {sections.map((section, index) => (
       <li key={index}>
         <Link
-          className="text-open-sans uppercase hover:border-b-4 hover:border-butterYellow hover:transition-all transition-discrete duration-700 ease-in-out"
+          className="uppercase hover:border-b-4 hover:border-butterYellow hover:transition-all transition-discrete duration-700 ease-in-out"
           to={`#/${section.toLowerCase()}`}
         >
           {section}
@@ -65,8 +65,8 @@ function Navbar() {
   }, [isOverlayVisible]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full">
-      <div className="flex justify-between items-center h-auto p-8 font-open-sans text-white text-pearl bg-none font-beiruti bg-cover bg-center">
+    <nav className="fixed top-0 left-0 w-full z-20">
+      <div className="flex justify-between items-center h-auto p-8 text-white text-pearl bg-white/30 backdrop-blur-md bg-cover bg-center">
         <div className="flex gap-5">
           <ProfileButton
             onClick={() => setOverlayVisible(!isOverlayVisible)}
