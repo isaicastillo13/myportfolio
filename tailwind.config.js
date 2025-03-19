@@ -18,7 +18,8 @@ module.exports = {
       fontFamily:{
         // 'beiruti':['Beiruti', 'serif'],
         'bakbakOne':['Bakbak One', 'serif'],
-        'open-sans':['Open Sans', 'serif']
+        'open-sans':['Open Sans', 'serif'],
+        'imbPlex':['IBM Plex Mono', 'monospace']
       }
     },
   },
