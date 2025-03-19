@@ -6,23 +6,22 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'negro':'#000000',
-      'ghostWhite':'9E9E9E',
-      'pearl':'#FCFBF8',
-      'butterYellow':'#FFF083',
-      'grisAzulado':'#64748B',
-      'azulBrillante':'#1DA1F2',
-      'neutral900':'#6b7280'
+      'negro': '#000000',
+      'ghostWhite': '#9E9E9E',
+      'pearl': '#FCFBF8',
+      'butterYellow': '#FFF083',
+      'grisAzulado': '#64748B',
+      'azulBrillante': '#1DA1F2',
+      'neutral900': '#6b7280'
     },
     extend: {
-      fontFamily:{
-        // 'beiruti':['Beiruti', 'serif'],
-        'bakbakOne':['Bakbak One', 'serif'],
-        'open-sans':['Open Sans', 'serif'],
-        'imbPlex':['IBM Plex Mono', 'monospace']
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'], // Roboto como fuente predeterminada
+        'bakbakOne': ['Bakbak One', 'serif'],
+        'open-sans': ['Open Sans', 'serif'],
+        'imbPlex': ['IBM Plex Mono', 'monospace']
       }
     },
   },
   plugins: [],
 }
-

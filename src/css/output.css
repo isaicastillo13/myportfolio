@@ -152,7 +152,7 @@ html,
   /* 3 */
   tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -614,6 +614,10 @@ video {
   width: 4rem;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -729,10 +733,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-none {
-  background-image: none;
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -794,12 +794,12 @@ video {
   font-family: Bakbak One, serif;
 }
 
-.font-open-sans {
-  font-family: Open Sans, serif;
-}
-
 .font-imbPlex {
   font-family: IBM Plex Mono, monospace;
+}
+
+.font-open-sans {
+  font-family: Open Sans, serif;
 }
 
 .text-2xl {
@@ -846,6 +846,12 @@ video {
 .text-pearl {
   --tw-text-opacity: 1;
   color: rgb(252 251 248 / var(--tw-text-opacity, 1));
+}
+
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -932,10 +938,6 @@ video {
     max-width: 42rem;
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -970,20 +972,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .lg\:gap-4 {
-    gap: 1rem;
   }
 
   .lg\:gap-2 {
