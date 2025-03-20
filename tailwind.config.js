@@ -19,6 +19,7 @@ module.exports = {
 
         sans: ['Outfit', 'sans-serif'], // Roboto como fuente predeterminada
         'open-sans': ['Open Sans', 'serif'],
+        'imbPlex': ['IBM Plex Mono', 'monospace']
       }
     },
   },
