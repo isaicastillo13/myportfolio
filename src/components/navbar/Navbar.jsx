@@ -65,13 +65,9 @@ function Navbar() {
   }, [isOverlayVisible]);
 
   return (
-<<<<<<< HEAD
-    <nav className="fixed top-0 left-0 w-full z-20">
-      <div className="flex justify-between items-center h-auto p-8 text-white text-pearl bg-white/30 backdrop-blur-md bg-cover bg-center">
-=======
     <nav className="fixed top-0 left-0 w-full">
       <div className="flex justify-between items-center h-auto p-8 font-open-sans text-white text-pearl bg-white/30 backdrop-blur-md bg-cover bg-center">
->>>>>>> e8bd3a58e0bd4ca4fcef06ddeeba3eaf58d4c824
+
         <div className="flex gap-5">
           <ProfileButton
             onClick={() => setOverlayVisible(!isOverlayVisible)}
