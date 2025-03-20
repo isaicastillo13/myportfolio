@@ -39,6 +39,7 @@ function App() {
 
   // Mostrar los proyectos
   return (
+<<<<<<< HEAD
     
     <div className="container mx-auto p-4">
       <div className="flex flex-col justify-center items-center mb-10">
@@ -55,20 +56,38 @@ function App() {
         <p className="text-neutral900 text-center text-sm md:text-xl my-4 w-2/4">Figma ipsum component variant main layer. Ellipse main layer component select follower subtract link list list.</p>
       </div>
       <div className="text-pearl md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-2">
+=======
+    <div>
+      <div className="flex flex-col gap-4 justify-center items-center">
+        <h1 className="text-pearl text-center font-bakbakOne text-4xl my-4 uppercase">Trabajos recientes</h1>
+        <p className="text-neutral900 text-center text-2xl my-4 w-2/4">Figma ipsum component variant main layer. Ellipse main layer component select follower subtract link list list.</p>
+      </div>
+      <div className="text-pearl md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-2 font-bakbakOne">
+>>>>>>> e8bd3a58e0bd4ca4fcef06ddeeba3eaf58d4c824
         {projects.length === 0 ? (
           <p>No hay proyectos disponibles.</p>
         ) : (
           projects.map((project) => (
             <div key={project.id} className="font-imbPlex flex flex-col p-4 my-4 gap-6">
+<<<<<<< HEAD
               <img className="filter grayscale hover:filter-none transition-all duration-500"
+=======
+              <img
+>>>>>>> e8bd3a58e0bd4ca4fcef06ddeeba3eaf58d4c824
                 src={`assets/images/${project.image_name}.png`}
                 alt={project.project_name}
               />
               <div className="flex flex-col gap-2">
                 <div className="flex flex-row gap-2">
+<<<<<<< HEAD
                   <h2 className="uppercase font-bold w-[80%]">{project.project_name}</h2>
 
                   <div className="flex flex-row gap-1 w-[20%]">
+=======
+                  <h2 className="uppercase font-bold">{project.project_name}</h2>
+
+                  <div className="flex flex-row gap-1">
+>>>>>>> e8bd3a58e0bd4ca4fcef06ddeeba3eaf58d4c824
                     <a href={project.project_link}>
                       <img
                         className="w-6 h-auto"
@@ -85,7 +104,11 @@ function App() {
                     </a>
                   </div>
                 </div>
+<<<<<<< HEAD
                 <p className="text-neutral900 text-justify">{project.description}</p>
+=======
+                <p className="text-justify">{project.description}</p>
+>>>>>>> e8bd3a58e0bd4ca4fcef06ddeeba3eaf58d4c824
               </div>
             </div>
           ))

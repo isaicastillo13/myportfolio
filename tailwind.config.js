@@ -16,7 +16,13 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+<<<<<<< HEAD
         sans: ['Outfit', 'sans-serif'], // Roboto como fuente predeterminada
+=======
+        sans: ['Roboto', 'sans-serif'], // Roboto como fuente predeterminada
+        'bakbakOne': ['Bakbak One', 'serif'],
+        'open-sans': ['Open Sans', 'serif'],
+>>>>>>> e8bd3a58e0bd4ca4fcef06ddeeba3eaf58d4c824
         'imbPlex': ['IBM Plex Mono', 'monospace']
       }
     },
