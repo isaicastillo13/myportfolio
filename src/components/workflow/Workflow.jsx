@@ -42,7 +42,7 @@ const Workflow = () => {
       </div>
 
       <div className="w-full">
-        <div style={{ height: "600px", position: "relative" }}>
+        <div style={{ height: "650px", position: "relative" }}>
           <FlowingMenu items={demoItems} />
         </div>
       </div>
