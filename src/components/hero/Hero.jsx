@@ -33,7 +33,7 @@ const Hero = () => {
           rel="noopener noreferrer"
         >
           Ver Trabajos
-          <span className="md:hidden group-hover:block transition-all transition-all duration-700 ease-in-out">
+          <span className="md:hidden group-hover:block transition-all duration-700 ease-in-out">
             🚀
           </span>
         </Link>
