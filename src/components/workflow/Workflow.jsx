@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FlowingMenu from "../animations/FlowingMenu";
 
-
 const demoItems = [
   {
     link: "#",
@@ -33,12 +32,12 @@ const demoItems = [
 
 const Workflow = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 text-pearl h-screen">
+    <div className="flex flex-col items-center justify-center h-screen gap-10 text-pearl">
       <div className="flex flex-col items-center justify-center gap-8">
-        <p className="text-neutral900 uppercase font-imbPlex">
+        <p className="font-imbPlex text-neutral900 uppercase">
           Este es nuestro
         </p>
-        <h1 className="text-4xl uppercase font-bold">Workflow</h1>
+        <h1 className="text-4xl font-bold uppercase">Workflow</h1>
       </div>
 
       <div className="w-full">
@@ -48,16 +47,16 @@ const Workflow = () => {
       </div>
 
       <Link
-          className="group  flex items-center gap-2 text-pearl text-sm md:text-xl uppercase border-4 border-butterYellow py-2 px-4 rounded-full transition duration-300 md:hover:text-pearl md:hover:font-bold"
-          to="/portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contactar
-          <span className="md:hidden group-hover:block transition-all duration-700 ease-in-out">
-            🚀
-          </span>
-        </Link>
+        to="/portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex items-center gap-2 rounded-full border-4 border-butterYellow px-4 py-2 text-sm uppercase text-pearl transition duration-300 md:text-xl md:hover:font-bold md:hover:text-pearl"
+      >
+        Contactar
+        <span className="hidden transition-all duration-700 ease-in-out group-hover:block md:hidden">
+          🚀
+        </span>
+      </Link>
     </div>
   );
 };
