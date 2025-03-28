@@ -32,7 +32,7 @@ const demoItems = [
 
 const Workflow = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen gap-10 text-pearl">
+    <div className="flex flex-col items-center justify-center h-screen gap-10 mt-10 text-pearl">
       <div className="flex flex-col items-center justify-center gap-8">
         <p className="font-imbPlex text-neutral900 uppercase">
           Este es nuestro
