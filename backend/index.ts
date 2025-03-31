@@ -43,6 +43,23 @@ Bun.serve({
                 });
             }
         }
+        // Endpoint para obtener los testimonios
+        if (url.pathname === '/api/testimony' && req.method === 'GET') {
+            try {
+                const [rows] = await connection.execute('call proyectos.GetTestimony();');
+                return new Response(JSON.stringify(rows), {
+                    headers: { ...headers, 'Content-Type': 'application/json' },
+                });
+            }catch (error) {
+                return new Response(JSON.stringify({ error: 'Error en la obtención de los datos' }), {
+                    status: 500,
+                    headers: { ...headers, 'Content-Type': 'application/json' },
+                });
+            }
+        }
+        
+
+        
 
         // Respuesta por defecto
         return new Response('Backend Funcionando', { status: 200, headers });
