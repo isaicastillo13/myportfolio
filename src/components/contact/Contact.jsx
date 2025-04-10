@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 function Contact() {
     return (
         // contenedor principal
-        <div>
+        <div className="container mx-auto flex flex-col md:flex-row justify-center items-center h-screen">
             {/* imagen */}
-            <div></div>
+            <div className="w-full h-14">
+                <img className="w-full h-full" src="./assets/images/imagenContacto.jpg" alt="" />
+            </div>
             {/* contenedor de formulario */}
             <div>
                 {/* info texto */}
