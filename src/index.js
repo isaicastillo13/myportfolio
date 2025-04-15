@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import Projects from './components/projects/Projects';
 import Workflow from './components/workflow/Workflow';
 import Testimonios from './components/testimonios/Testimonios';
+import Contact from './components/contact/Contact';
 import reportWebVitals from './reportWebVitals';
 import '../src/css/output.css';
 
@@ -17,6 +18,7 @@ root.render(
       <Projects />
       <Workflow />
       <Testimonios />
+      <Contact />
     </BrowserRouter>
   </React.StrictMode>
 );
