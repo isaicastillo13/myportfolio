@@ -17,7 +17,7 @@ const Hero = () => {
     >
       <Navbar />
       
-      <div className="flex flex-col items-center justify-center gap-4 text-center text-pearl mt-44 md:mt-36 md:gap-6">
+      <div className="flex flex-col items-center justify-center gap-4 text-center text-pearl mt-32 mpx-8 md:mt-20 md:gap-6">
         <h1 className="text-4xl font-bold uppercase md:text-8xl">
           Isaias E. Castillo
         </h1>

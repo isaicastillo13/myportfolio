@@ -48,13 +48,12 @@ function App() {
             baseRotation={5}
             blurStrength={10}
           >
-            Trabajos recientes
+            Proyectos de Desarrollo Web
           </ScrollReveal>
         </h1>
         <p className="my-4 text-sm text-center md:text-xl text-neutral900 w-2/4">
-          Figma ipsum component variant main layer. Ellipse main layer component
-          select follower subtract link list list.
-        </p>
+          Esto son algunos de mis proyectos más recientes como desarrollador web.
+          </p>
       </div>
       <div className="grid font-bakbakOne text-pearl md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-2">
         {projects.length === 0 ? (
